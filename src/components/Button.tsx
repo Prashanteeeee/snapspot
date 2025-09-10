@@ -28,7 +28,7 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const getButtonStyle = () => {
-    const baseStyle = [styles.button, styles[size]];
+    const baseStyle: any[] = [styles.button, styles[size]];
     
     if (fullWidth) {
       baseStyle.push(styles.fullWidth);
@@ -54,7 +54,7 @@ export const Button: React.FC<ButtonProps> = ({
   };
 
   const getTextStyle = () => {
-    const baseStyle = [styles.text, styles[`${size}Text`]];
+    const baseStyle: any[] = [styles.text, styles[`${size}Text`]];
     
     switch (variant) {
       case 'primary':
